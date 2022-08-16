@@ -1,0 +1,28 @@
+.navbar{
+    display: grid;
+    grid-template-columns: 49% 51%;
+    width: 100%;
+    border-bottom: 0.1rem solid black;
+    position: sticky;
+    z-index: 9;
+    top: 0;
+}
+
+.menu, .bloobloom_logo{
+    display: flex;
+    align-items: center;
+}
+.menu a {
+    color: black;
+    font-size: 1rem;
+    margin: 1.2rem 0 1rem 2.5rem;
+}
+.menu a:hover{
+    text-decoration: underline 0.15rem;
+    text-underline-offset: 0.35rem;
+}
+
+.bloobloom_logo img{
+    height: 1.9rem;
+}
+
