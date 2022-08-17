@@ -1,7 +1,9 @@
 import React from 'react';
-import './header.css'
+import './header.css';
+import { useStateContext } from '../../contexts/ContextProvider'
 
 const Header = () => {
+  // const {collectionsName} = useStateContext()
   const collectionName = 'SPECTACLES WOMEN';
   return (
     <div className='header'>

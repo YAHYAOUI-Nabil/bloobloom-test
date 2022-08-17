@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import {MdPlayArrow} from 'react-icons/md'
+import {MdPlayArrow} from 'react-icons/md';
 
 import Image from '../../assets/bloobloom.png';
 import './navbar.css';
