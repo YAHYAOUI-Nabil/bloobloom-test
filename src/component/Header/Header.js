@@ -3,13 +3,13 @@ import './header.css';
 import { useStateContext } from '../../contexts/ContextProvider'
 
 const Header = () => {
-  // const {collectionsName} = useStateContext()
-  const collectionName = 'SPECTACLES WOMEN';
+  const {collectionsName} = useStateContext()
+
   return (
     <div className='header'>
       <div></div>
       <div className='collection-name'>
-        <h1>{collectionName}</h1>
+        <h1>{collectionsName}</h1>
       </div>
       <div className='filters'>
         <div className='color-filter'>

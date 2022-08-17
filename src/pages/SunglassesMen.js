@@ -2,10 +2,13 @@ import React from 'react'
 
 import './index.css'
 import useFetch from '../hooks/useFetch'
+import useCollection from '../hooks/useCollection'
+
 
 const SunglassesMen = () => {
   const API_URL = 'https://staging-api.bloobloom.com/user/v1/sales_channels/website/collections/sunglasses-men/glasses';
   const [glasses] = useFetch(API_URL);
+  useCollection('SUNGLASSES MEN');
     
   return (
     <div>
