@@ -15,7 +15,6 @@ const SunglassesMen = () => {
         <div className='glasses_container'>
           {glasses.map((item)=>(
             <div key={item.id} className='glass-item'>
-              
               <img src={item.glass_variants[0].media[0].url} alt='glassImage' className='glass_img'/>
               <h3 className='glass_name'>{item.name}</h3>
             </div>

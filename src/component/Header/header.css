@@ -25,14 +25,7 @@
 .filter-name{
     font-weight: 100;
 }
-/* .color-filter, .shape-filter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 102%;
-    border-left: 0.1rem solid black;
-    cursor: pointer;
-} */
+
 .filter-name_container{
     display: flex;
     align-items: center;
@@ -93,7 +86,8 @@
     align-items: center;
 }
 .shape-filter-items-list{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 .shape-filter-items-list li, .color-filter-items-list li{
@@ -102,6 +96,54 @@
 }
 .shape-filter-items-list li:hover, .color-filter-items-list li:hover{
     text-decoration: underline;
+}
+
+/************* Media queries (medium devices) ************/
+@media screen and (max-width : 1200px) {
+    .shape-filter-items-list{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .shape-filter-items{
+        width: 10rem;
+        height: 15rem;
+    }
+    
+}
+@media screen and (max-width : 960px) {
+    .collection-name{
+        font-size: 0.6rem;
+    }
+    .filters{
+        grid-template-columns: 35% 35% 30%;  
+    }
+    .color-filter-items-list, .shape-filter-items-list{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .color-filter-items, .shape-filter-items{
+        width: 10rem;
+        height: 15rem;
+        border-left: 0.1rem solid black;
+    }
+    
+}
+/************* Media queries (small devices) ************/
+@media screen and (max-width : 660px) {
+    .header{
+        grid-template-columns: repeat(1, 1fr);
+        height: 5rem;
+    }
+    .filters{
+        grid-template-columns: 50% 50% 0%; 
+        border-top: 0.1rem solid black; 
+    }
+    .collection-name{
+        font-size: 0.8rem;
+    } 
+    .color-filter-items, .shape-filter-items{
+        margin-top: 0.03rem;
+    }
 }
 
 
