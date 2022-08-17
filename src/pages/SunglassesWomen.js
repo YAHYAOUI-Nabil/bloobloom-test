@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './index.css';
+import '../assets/styles.css';
 import useFetch from '../hooks/useFetch';
 import useCollection from '../hooks/useCollection';
 
