@@ -9,27 +9,99 @@
 .collection-name{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 102%;
     border-left: 0.1rem solid black;
+    font-size: 0.8rem;
 }
 
 .filters{
     display: grid;
     grid-template-columns: 25% 25% 50%;
+    height: 102%;
+    border-left: 0.1rem solid black;
 }
 
-.filters div {
+.filter-name{
+    font-weight: 100;
+}
+/* .color-filter, .shape-filter {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 102%;
     border-left: 0.1rem solid black;
+    cursor: pointer;
+} */
+.filter-name_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 102%;
+    border-right: 0.1rem solid black;
+    cursor: pointer;
 }
+
+.color-filter{
+    position: relative;
+    display: inline-block;
+}
+.color-filter-items{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 20rem;
+    height: 5rem;
+    margin: -0.01rem 0rem  0rem -0.1rem;
+    padding: 0.3rem 0 0 1rem;
+    z-index: 1;
+    border-right: 0.1rem solid black;
+    border-bottom: 0.1rem solid black;
+}
+
+.color-filter:hover .color-filter-items{
+    display: block;  
+}
+
 
 .shape-filter{
-    border-right: 0.1rem solid black;
+    position: relative;
+    display: inline-block;
 }
 
-h4{
-    font-weight: 100;
+.shape-filter-items{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 20rem;
+    height: 5rem;
+    margin: -0.01rem 0rem  0rem -0.06rem;
+    padding-left: 1.5rem;
+    z-index: 1;
+    border: 0.1rem solid black;
+    border-top: unset;
 }
+
+.color-filter-items-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.shape-filter:hover .shape-filter-items{
+    display: flex; 
+    align-items: center;
+}
+.shape-filter-items-list{
+    display: flex;
+    gap: 1rem;
+}
+.shape-filter-items-list li, .color-filter-items-list li{
+    background-color: unset;
+    cursor: pointer;
+}
+.shape-filter-items-list li:hover, .color-filter-items-list li:hover{
+    text-decoration: underline;
+}
+
+

@@ -13,10 +13,32 @@ const Header = () => {
       </div>
       <div className='filters'>
         <div className='color-filter'>
-          <h4>COLOUR</h4>
+          <div className='filter-name_container'>
+            <h4 className='filter-name'>COLOUR</h4>
+          </div>
+          <div className='color-filter-items'>
+            <ul className='color-filter-items-list'>
+              <li>Black</li>
+              <li>Tortoise</li>
+              <li>Coloured</li>
+              <li>Crystal</li>
+              <li>Dark</li>
+              <li>Bright</li>
+            </ul>
+          </div>
         </div>
         <div className='shape-filter'>
-          <h4>SHAPE</h4>
+          <div className='filter-name_container'>
+            <h4 className='filter-name'>SHAPE</h4>
+          </div>
+          <div className='shape-filter-items'>
+            <ul className='shape-filter-items-list'>
+              <li>Square</li>
+              <li>Rectangle</li>
+              <li>Round</li>
+              <li>Cat-eye</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
