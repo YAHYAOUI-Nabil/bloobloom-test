@@ -1,4 +1,5 @@
 import React from 'react';
+import {GoPrimitiveDot} from 'react-icons/go'
 
 import './header.css';
 import { useStateContext } from '../../contexts/ContextProvider';
@@ -19,12 +20,12 @@ const Header = () => {
           </div>
           <div className='color-filter-items'>
             <ul className='color-filter-items-list'>
-              <li>Black</li>
-              <li>Tortoise</li>
-              <li>Coloured</li>
-              <li>Crystal</li>
-              <li>Dark</li>
-              <li>Bright</li>
+              <li className='dot_color'><GoPrimitiveDot className='dot-black'/> Black</li>
+              <li className='dot_color'><GoPrimitiveDot className='dot-turtoise'/> Tortoise</li>
+              <li className='dot_color'><GoPrimitiveDot className='dot-coloured'/> Coloured</li>
+              <li className='dot_color'><GoPrimitiveDot className='dot-crystal'/> Crystal</li>
+              <li className='dot_color'><GoPrimitiveDot className='dot-dark'/> Dark</li>
+              <li className='dot_color'><GoPrimitiveDot className='dot-bright'/> Bright</li>
             </ul>
           </div>
         </div>

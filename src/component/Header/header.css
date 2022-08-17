@@ -129,6 +129,42 @@
     }
     
 }
+
+.dot_color{
+    display: flex;
+    align-items: center;
+}
+
+.dot-black{
+    height: 1.5rem;
+    margin-right: 1px;
+}
+.dot-turtoise{
+    height: 1.5rem;
+    margin-right: 1px;
+    color: #9c6a2f;
+}
+.dot-coloured{
+    height: 1.5rem;
+    margin-right: 1px;
+    color: sandybrown;
+}
+.dot-crystal{
+    height: 1.5rem;
+    margin-right: 1px;
+    color: #e9ecf1;
+}
+.dot-dark{
+    height: 1.5rem;
+    margin-right: 1px;
+    color: #612832;
+}
+.dot-bright{
+    height: 1.5rem;
+    margin-right: 1px;
+    color: #d48d31;
+}
+
 /************* Media queries (small devices) ************/
 @media screen and (max-width : 660px) {
     .header{
