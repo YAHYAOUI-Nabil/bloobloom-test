@@ -1,0 +1,35 @@
+.header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    border-bottom: 0.1rem solid black;
+    height: 3rem;
+}
+
+.collection-name{
+    display: flex;
+    justify-content: center;
+    height: 102%;
+    border-left: 0.1rem solid black;
+}
+
+.filters{
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+}
+
+.filters div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 102%;
+    border-left: 0.1rem solid black;
+}
+
+.shape-filter{
+    border-right: 0.1rem solid black;
+}
+
+h4{
+    font-weight: 100;
+}

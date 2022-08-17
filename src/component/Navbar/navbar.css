@@ -3,9 +3,34 @@
     grid-template-columns: 49% 51%;
     width: 100%;
     border-bottom: 0.1rem solid black;
+    background-color: white;
     position: sticky;
-    z-index: 9;
+    z-index: 99;
     top: 0;
+}
+
+.menu_container{
+    position: relative;
+    display: inline-block;
+    margin: 1.2rem 0 0rem 2.5rem;
+}
+.sidebar-menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 12rem;
+    height: 100vh;
+    margin: 0.1rem 0rem  0rem -2.5rem;
+    z-index: 1;
+    border-right: 0.1rem solid black;
+}
+
+.menu_container:hover .sidebar-menu{
+    display: block;  
+}
+.menu_container:hover .dropdown{
+    text-decoration: underline 0.15rem;
+    text-underline-offset: 0.35rem;
 }
 
 .menu, .bloobloom_logo{
@@ -15,14 +40,93 @@
 .menu a {
     color: black;
     font-size: 1rem;
-    margin: 1.2rem 0 1rem 2.5rem;
-}
-.menu a:hover{
-    text-decoration: underline 0.15rem;
-    text-underline-offset: 0.35rem;
+    margin-bottom: 1rem;
 }
 
 .bloobloom_logo img{
     height: 1.9rem;
 }
+
+.spectacles-menu, .sunglasses-menu{
+    position: relative;
+    display: flex;
+    padding: 1.2rem 0rem 1rem 1.5rem;
+    border-bottom: 0.1rem solid black;
+    cursor: pointer;
+}
+.spactacles-menu-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 12rem;
+    height: 100vh;
+    margin: -1.2rem 0rem  0rem 10.5rem;
+    z-index: 1;
+    border-right: 0.1rem solid black;
+}
+
+.spectacles-menu:hover .spactacles-menu-content{
+    display: block;
+    
+}
+
+.sunglasses-menu-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 12rem;
+    height: 100vh;
+    margin: -4.75rem 0rem  0rem 10.5rem;
+    z-index: 1;
+    border-right: 0.1rem solid black;
+}
+
+.sunglasses-menu:hover .sunglasses-menu-content{
+    display: block;
+    
+}
+
+.home-try-on, .pair-for-pair{
+    padding: 1.2rem 0rem 1rem 1.5rem;
+    border-bottom: 0.1rem solid black;
+    cursor: pointer;
+}
+
+.item{
+    width: 13rem;
+    margin-right: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    margin-right: -0.05rem;
+}
+li:hover{
+    background-color: black;
+}
+li:hover .item {
+    color: white;
+}
+.home-try-on:hover, .pair-for-pair:hover  {
+    color: white;
+}
+
+.sub-menu-content-item{
+    display: flex;
+    align-items: center;
+    height: 3.55rem;
+    border-bottom: 0.1rem solid black;
+    padding-left: 1.5rem;
+}
+.sub-menu-content-item a{
+    color: black;
+}
+.sub-menu-content-item:hover a{
+    color: white;
+}
+.sub-menu-content-item:hover{
+    color: white;
+}
+
 

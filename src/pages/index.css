@@ -1,0 +1,22 @@
+.glasses_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.glass-item{
+    border-bottom: 0.1rem solid black;
+    border-right: 0.1rem solid black;
+    position: relative;
+}
+.glass_name{
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 300;
+}
+.glass_img{
+    width: 100%;
+    height: 42vh;
+}
