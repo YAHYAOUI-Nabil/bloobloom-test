@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import './index.css'
-import useFetch from '../hooks/useFetch'
-import useCollection from '../hooks/useCollection'
+import './index.css';
+import useFetch from '../hooks/useFetch';
+import useCollection from '../hooks/useCollection';
 
 
 const SpectaclesWomen = () => {
@@ -25,4 +25,4 @@ const SpectaclesWomen = () => {
   )
 }
 
-export default SpectaclesWomen
+export default SpectaclesWomen;

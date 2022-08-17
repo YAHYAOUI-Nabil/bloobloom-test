@@ -83,10 +83,7 @@ const Navbar = () => {
           <img src={Image} alt='bloobloomLogo'/>
         </div>
     </div>
-
-    
-    
-    </>
+  </>
     
   )
 }

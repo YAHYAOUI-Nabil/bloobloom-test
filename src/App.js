@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import Navbar from './component/Navbar/Navbar';
 import Header from './component/Header/Header';
@@ -17,7 +17,7 @@ const App = () => {
           <Navbar />
           <Header />
           <Routes>
-            <Route path='/' element={<SpectaclesWomen/>}/>
+            <Route path='/' element={<Navigate to='/collections/spectacles-women/glasses' replace/>}/>
             <Route path='/collections/spectacles-women/glasses' element={<SpectaclesWomen/>}/>
             <Route path='/collections/spectacles-men/glasses' element={<SpectaclesMen/>}/>
             <Route path='/collections/sunglasses-women/glasses' element={<SunglassesWomen/>}/>

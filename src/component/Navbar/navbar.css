@@ -3,6 +3,7 @@
     grid-template-columns: 49% 51%;
     width: 100%;
     border-bottom: 0.1rem solid black;
+    border-right: 0.1rem solid black;
     background-color: white;
     position: sticky;
     z-index: 99;
@@ -12,7 +13,7 @@
 .menu_container{
     position: relative;
     display: inline-block;
-    margin: 1.2rem 0 0rem 2.5rem;
+    margin: 1.2rem 0 0rem 2.5rem; 
 }
 .sidebar-menu{
     display: none;
@@ -22,12 +23,11 @@
     height: 100vh;
     margin: 0.1rem 0rem  0rem -2.5rem;
     z-index: 1;
-    border-right: 0.1rem solid black;
+    border-right: 0.1rem solid black; 
 }
 
 .menu_container:hover .sidebar-menu{
-    display: block;  
-    
+    display: block;
 }
 .menu_container:hover .dropdown{
     text-decoration: underline 0.15rem;

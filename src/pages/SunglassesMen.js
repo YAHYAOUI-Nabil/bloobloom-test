@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import './index.css'
-import useFetch from '../hooks/useFetch'
-import useCollection from '../hooks/useCollection'
+import './index.css';
+import useFetch from '../hooks/useFetch';
+import useCollection from '../hooks/useCollection';
 
 
 const SunglassesMen = () => {
@@ -24,4 +24,4 @@ const SunglassesMen = () => {
   )
 }
 
-export default SunglassesMen
+export default SunglassesMen;

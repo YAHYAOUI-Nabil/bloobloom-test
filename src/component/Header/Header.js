@@ -1,13 +1,14 @@
 import React from 'react';
+
 import './header.css';
-import { useStateContext } from '../../contexts/ContextProvider'
+import { useStateContext } from '../../contexts/ContextProvider';
 
 const Header = () => {
-  const {collectionsName} = useStateContext()
+  const {collectionsName} = useStateContext();
 
   return (
     <div className='header'>
-      <div></div>
+      <div className='space'></div>
       <div className='collection-name'>
         <h1>{collectionsName}</h1>
       </div>
