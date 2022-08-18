@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import {MdPlayArrow} from 'react-icons/md';
 
 import Image from '../../assets/bloobloom.png';
@@ -29,12 +30,12 @@ const Navbar = () => {
                     <ul>
                         <li>
                           <div className='sub-menu-content-item'>
-                            <span><a href='/collections/spectacles-women/glasses'>WOMEN</a></span>
+                            <span><Link to='/collections/spectacles-women/glasses'>WOMEN</Link></span>
                           </div>
                         </li>
                         <li>
                           <div className='sub-menu-content-item'>
-                            <span><a href='/collections/spectacles-men/glasses'>MEN</a></span>
+                            <span><Link to='/collections/spectacles-men/glasses'>MEN</Link></span>
                           </div>
                         </li>
                       </ul>
@@ -53,12 +54,12 @@ const Navbar = () => {
                       <ul>
                         <li>
                           <div className='sub-menu-content-item'>
-                            <span><a href='/collections/sunglasses-women/glasses'>WOMEN</a></span>
+                            <span><Link to='/collections/sunglasses-women/glasses'>WOMEN</Link></span>
                           </div>
                         </li>
                         <li>
                           <div className='sub-menu-content-item'>
-                            <span><a href='/collections/sunglasses-men/glasses'>MEN</a></span>
+                            <span><Link to='/collections/sunglasses-men/glasses'>MEN</Link></span>
                           </div>
                         </li>
                       </ul>
